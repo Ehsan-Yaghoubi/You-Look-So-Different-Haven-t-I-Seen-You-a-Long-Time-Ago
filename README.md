@@ -8,7 +8,7 @@
 - pytorch-ignite == 0.1.2
 
 ## Preprocessing:
-1. extract [body-keypoints](https://colab.research.google.com/drive/1-invDDFpyVFlVuJSAV6AWyZgh4rNc3vF?usp=sharing) and body masks (using mask_extraction.py)
+1. extract [body-keypoints](https://colab.research.google.com/drive/1-invDDFpyVFlVuJSAV6AWyZgh4rNc3vF?usp=sharing) and body masks (using `mask_extraction.py`)
 2. prepare the noneID dataset by running `Preprocessing.py`
 
 You can skip the above steps, as we have provided the processed data at the links below (Please ask for the original data form the provider of each dataset):
@@ -24,7 +24,7 @@ You can skip the above steps, as we have provided the processed data at the link
 You can use (1) `.sh` scripts to train and test the method or (2) you can use an IDE and run `train.py` and `test.py` files.
 In the first case, remember to set the directories to the weights and data in all the following `.sh` files correctly, and in the latter case, please set the variables and directories in `.yml` files at `configs` path.
 
-### (1) Use .sh files to train and test the model
+### (1) Use `.sh` files to train and test the model
 
 For the LTCC dataset, first run `sh Train_on_LTCC.sh` and then run `sh Test_on_LTCC.sh`. 
 
