@@ -21,8 +21,8 @@ You can skip the above steps, as we have provided the processed data at the link
 
 ## Train and Test the LSD Model
 
-You can use (1) `.sh` scripts to train and test the method or (2) you can use an IDE and rum `train.py` and `test.py` files.
-In the fist case, remember to set the directories to the weights and data in all the following `.sh` files correctly, and in the latter case, please set the variables and directories in `.yml` files at `configs` path.
+You can use (1) `.sh` scripts to train and test the method or (2) you can use an IDE and run `train.py` and `test.py` files.
+In the first case, remember to set the directories to the weights and data in all the following `.sh` files correctly, and in the latter case, please set the variables and directories in `.yml` files at `configs` path.
 
 ### (1) Use .sh files to train and test the model
 
