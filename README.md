@@ -35,6 +35,7 @@ First run `sh Train_on_NKUP.sh` and then run `sh Test_on_NKUP.sh`.
 
 ### (2) Use IDE to train and test the model
 To train, in `tools/train.py`, line 90, set the `--config_file` to one of `.yml` files you want. E.g., `LTE_CNN_PRCC_ClothChangingSetting.yml`, and remember to modify the paths in `./configs/LTE_CNN_PRCC_ClothChangingSetting.yml`.
+
 To test the model, in `tools/test.py`, line 17, set the `--config_file` to the `.yml` file you want. E.g., `LTE_CNN_PRCC_ClothChangingSetting.yml`, and remember to modify the model weight path in `./configs/LTE_CNN_PRCC_ClothChangingSetting.yml`.
 
 # Reference:
