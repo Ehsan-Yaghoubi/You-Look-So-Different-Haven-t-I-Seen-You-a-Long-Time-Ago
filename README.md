@@ -1,6 +1,6 @@
 # You Look So Different! Haven’t I Seen You a Long Time Ago?
 
-## requirments:
+## Requirments:
 - python == 3.5
 - tensorflow == 1.13.2 (To use Hifill image painting)
 - torch == 1.4.0
