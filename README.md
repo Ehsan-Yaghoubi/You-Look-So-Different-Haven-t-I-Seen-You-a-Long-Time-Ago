@@ -26,12 +26,11 @@ In the first case, remember to set the directories to the weights and data in al
 
 ### (1) Use `.sh` files to train and test the model
 
-For the LTCC dataset, first run `sh Train_on_LTCC.sh` and then run `sh Test_on_LTCC.sh`. 
+For evaluation on the LTCC dataset, first run `sh Train_on_LTCC.sh` and then run `sh Test_on_LTCC.sh`. 
 
-For the PRCC dataset in standard setting, first run `sh Train_on_PRCC_StandardSetting.sh` and then run `sh Test_on_PRCC.sh`, and for the cloth changing setting, first run `sh Train_on_PRCC_ClothChangingSetting.sh` and then run `sh Test_on_PRCC.sh`.
+For evaluation on the PRCC dataset in standard setting, first run `sh Train_on_PRCC_StandardSetting.sh` and then run `sh Test_on_PRCC.sh`, and for the cloth changing setting, first run `sh Train_on_PRCC_ClothChangingSetting.sh` and then run `sh Test_on_PRCC.sh`.
 
-NKUP dataset 
-First run `sh Train_on_NKUP.sh` and then run `sh Test_on_NKUP.sh`.
+For evaluation on the NKUP dataset, first run `sh Train_on_NKUP.sh` and then run `sh Test_on_NKUP.sh`.
 
 ### (2) Use IDE to train and test the model
 To train, in `tools/train.py`, line 90, set the `--config_file` to one of `.yml` files you want. E.g., `LTE_CNN_PRCC_ClothChangingSetting.yml`, and remember to modify the paths in `./configs/LTE_CNN_PRCC_ClothChangingSetting.yml`.
