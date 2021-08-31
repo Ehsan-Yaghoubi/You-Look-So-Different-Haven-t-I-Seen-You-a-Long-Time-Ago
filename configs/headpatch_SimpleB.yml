@@ -1,0 +1,38 @@
+MODEL:
+  PRETRAIN_CHOICE: 'imagenet'
+  PRETRAIN_PATH: '../pretrained_models'
+  NETWORK: "simple_baseline"
+
+INPUT:
+  SIZE_TRAIN: [256, 128]
+  SIZE_TEST: [256, 128]
+  PADDING : 10
+
+DATASETS:
+  NAMES: ('ltcc_orig') # ltcc_noneID, ltcc_orig, celebreid_noneID, celebreid_orig, prcc_noneID, prcc_orig
+  #ROOT_DIR: '/media/socialab157/2cbae9f1-6394-4fa9-b963-5ef890eee044/B_DATASETS/Long_term_datasets/celeb_reid/celebreid_orig'
+  #ROOT_DIR: '/media/socialab157/2cbae9f1-6394-4fa9-b963-5ef890eee044/B_DATASETS/Long_term_datasets/prcc/prcc_orig'
+  #ROOT_DIR: '/media/socialab157/2cbae9f1-6394-4fa9-b963-5ef890eee044/B_DATASETS/Long_term_datasets/LTCC_ReID/LTCC_orig'
+
+  #ROOT_DIR: '/media/socialab157/2cbae9f1-6394-4fa9-b963-5ef890eee044/B_DATASETS/Long_term_datasets/prcc/prcc_orig_HP'
+  ROOT_DIR: '/media/socialab157/2cbae9f1-6394-4fa9-b963-5ef890eee044/B_DATASETS/Long_term_datasets/LTCC_ReID/LTCC_orig_HP'
+
+  feat2_DIR: "None"
+
+DATALOADER:
+  SAMPLER: 'softmax'
+  Aug: True
+
+SOLVER:
+  MAX_EPOCHS: 60
+  IMS_PER_BATCH: 128
+  CHECKPOINT_PERIOD: 10
+  LOG_PERIOD: 20
+  EVAL_PERIOD: 1
+
+TEST:
+  IMS_PER_BATCH: 128
+  WEIGHT: "/media/socialab157/2cbae9f1-6394-4fa9-b963-5ef890eee044/A_PROJECTS/LOCAL/cvpr2021/YLD_YouLookDifferent/OUTPUT/simple_baseline_HP_ltcc/train_2021_Mar_08_15_15_04/resnet50_model_60.pth"
+
+OUTPUT_DIR: "/media/socialab157/2cbae9f1-6394-4fa9-b963-5ef890eee044/A_PROJECTS/LOCAL/cvpr2021/YLD_YouLookDifferent/OUTPUT/simple_baseline_HP_ltcc"
+

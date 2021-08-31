@@ -1,0 +1,1 @@
+python3 tools/net_test.py --config_file='configs/LTE_CNN_LTCC.yml' TEST.WEIGHT "Path/to/your_trained_model.pth" MODEL.Evaluate "both" MODEL.PRETRAIN_PATH '../datasets_weights/pretrained_models' DATASETS.NAMES 'ltcc_orig' DATASETS.ROOT_DIR '../Long_term_datasets/LTCC_ReID/LTCC_orig'  OUTPUT_DIR '/OUTPUT/LTE_CNN_ltcc'

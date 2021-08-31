@@ -1,0 +1,52 @@
+MODEL:
+  PRETRAIN_PATH : '../../pretrained_models'
+  NAME: 'resnet50_ibn_a'
+  NECK: 'bnneck'
+  NETWORK: LTE_CNN
+  IF_LABELSMOOTH: 'on'
+  Evaluate: "both"
+
+INPUT:
+  SIZE_TRAIN: [ 256, 128 ]
+  PADDING : 10
+
+DATASETS:
+  NAMES: ('ltcc_orig')
+  ROOT_DIR: "/media/socialab157/2cbae9f1-6394-4fa9-b963-5ef890eee044/B_DATASETS/Long_term_datasets/LTCC_ReID/LTCC_orig/"
+  feat2_DIR: "/media/socialab157/2cbae9f1-6394-4fa9-b963-5ef890eee044/B_DATASETS/Long_term_datasets/LTCC_ReID/LTCC_nonID/STE_features"
+
+DATALOADER:
+  SAMPLER: 'softmax_CosineSim'
+  Aug: True
+
+SOLVER:
+  OPTIMIZER_NAME: 'Adam'
+  BASE_LR: 0.00035
+  BIAS_LR_FACTOR: 1
+  WEIGHT_DECAY: 0.0005
+  WEIGHT_DECAY_BIAS: 0.0005
+  IMS_PER_BATCH: 128
+
+  STEPS: [30, 55]
+  GAMMA: 0.1
+
+  WARMUP_FACTOR: 0.01
+  WARMUP_ITERS: 5
+  WARMUP_METHOD: 'linear'
+
+  MAX_EPOCHS: 150
+  CHECKPOINT_PERIOD: 5
+  LOG_PERIOD: 50
+  EVAL_PERIOD: 5
+
+
+TEST:
+  IMS_PER_BATCH: 128
+  NECK_FEAT: 'after'
+  RE_RANKING: 'no'
+  WEIGHT: "path/to/your_trained_model.pth"
+
+OUTPUT_DIR: "/media/socialab157/2cbae9f1-6394-4fa9-b963-5ef890eee044/A_PROJECTS/LOCAL/cvpr2021/You-Look-So-Different-Haven-t-I-Seen-You-a-Long-Time-Ago/OUTPUT/LTE_CNN_ltcc"
+
+
+
