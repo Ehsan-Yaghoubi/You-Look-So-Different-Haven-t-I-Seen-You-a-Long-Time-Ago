@@ -10,7 +10,8 @@
 ## Preprocessing:
 1. extract [body-keypoints](https://colab.research.google.com/drive/1-invDDFpyVFlVuJSAV6AWyZgh4rNc3vF?usp=sharing) and body masks (using mask_extraction.py)
 2. prepare the noneID dataset by running `Preprocessing.py`
-you can skip the above steps, as we have provided the processed data at the links below (Please ask for the original data form the provider of each dataset):
+
+You can skip the above steps, as we have provided the processed data at the links below (Please ask for the original data form the provider of each dataset):
 
 [LTCC data: 1.2 GB](https://drive.google.com/file/d/1g2CKswZFDxovJinkEDvfoSaqpRuw3qAB/view?usp=sharing)
 
