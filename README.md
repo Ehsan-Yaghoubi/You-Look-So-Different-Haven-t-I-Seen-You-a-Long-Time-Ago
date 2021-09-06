@@ -40,6 +40,7 @@ To test the LSD model, in `tools/test.py`, line 17, set the `--config_file` to t
 # Reference:
 In case our project helps your research, we appreciate it if you cite it in you works. Our work is in-press in Image and Vision Computing journal.
 
+```
 @article{yaghoubi2021you,
 title = {You Look So Different! Haven’t I Seen You a Long Time Ago?},
 journal = {Image and Vision Computing},
@@ -47,3 +48,4 @@ pages = {1--1},
 year = {2021},
 author = {Ehsan Yaghoubi and Diana Borza and Bruno Degarding and Hugo Proença}
 }
+```
