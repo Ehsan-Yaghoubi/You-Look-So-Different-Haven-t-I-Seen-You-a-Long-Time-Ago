@@ -38,14 +38,17 @@ To train the LSD model, in `tools/train.py`, line 90, set the `--config_file` to
 To test the LSD model, in `tools/test.py`, line 17, set the `--config_file` to the `.yml` file you want. E.g., `LTE_CNN_PRCC_ClothChangingSetting.yml`, and remember to modify the `model_weights` path in `./configs/LTE_CNN_PRCC_ClothChangingSetting.yml`.
 
 # Reference:
-In case our project helps your research, we appreciate it if you cite it in you works. Our work is in-press in Image and Vision Computing journal.
+In case our project helps your research, we appreciate it if you cite it in you works.
 
 ```
-@article{yaghoubi2021you,
-title = {You Look So Different! Haven’t I Seen You a Long Time Ago?},
+@article{Yaghoubi2021You,
+title = {You look so different! Haven’t I seen you a long time ago?},
 journal = {Image and Vision Computing},
-pages = {1--1},
+pages = {104288},
 year = {2021},
-author = {Ehsan Yaghoubi and Diana Borza and Bruno Degarding and Hugo Proença}
+issn = {0262-8856},
+doi = {https://doi.org/10.1016/j.imavis.2021.104288},
+url = {https://www.sciencedirect.com/science/article/pii/S0262885621001931},
+author = {Ehsan Yaghoubi and Diana Borza and Bruno Degardin and Hugo Proença}
 }
 ```
