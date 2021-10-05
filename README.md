@@ -1,5 +1,4 @@
-# You Look So Different! Haven’t I Seen You a Long Time Ago?
-This repository provides the code for [this paper](https://www.sciencedirect.com/science/article/abs/pii/S0262885621001931)
+This repository provides the code for the paper entitled [You Look So Different! Haven’t I Seen You a Long Time Ago?](https://www.sciencedirect.com/science/article/abs/pii/S0262885621001931), and accepted for publication in the Image and Vision Computing journal.
 
 ## Requirments:
 - python == 3.5
